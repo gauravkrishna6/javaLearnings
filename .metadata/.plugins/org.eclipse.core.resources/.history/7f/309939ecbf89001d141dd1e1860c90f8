@@ -1,0 +1,25 @@
+package chapter.one;
+
+public enum Wood {
+
+	INDIAN_ROSEWOOD("Indian Rosewood"),
+	BRAZILLAIN_ROSEWOOD("Brazillain Rosewood"),
+	MAHOGANY("Mahogany"),
+	MAPLE("Maple"),
+	COCOBOLO("Cocobolo"),
+	CEDAR("Cedar"),
+	ADIRONDACK("Adirondack"),
+	ALDER("Alder"),
+	SITKA("Sitka")
+	
+	private final String value ;
+
+	Wood(String value) {
+		this.value = value;
+	}
+
+	public String getValue() {
+		return value;
+	}
+	
+}

@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package functional.programming.with.java;
+
+import java.util.List;
+
+/**
+ * @author gkrishna
+ *
+ */
+public class FP01Structured {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		List<Integer> numberList = List.of(1,2,3,45);
+//		printListStructured(List.of(1,2,3,45));
+		
+		printEvenListStructured(numberList);
+	}
+
+	@SuppressWarnings("unused")
+	private static void printListStructured(List<Integer> numbers) {
+
+		for(Integer num : numbers ) {
+			System.out.println(num);
+		}
+	}
+
+	private static void printEvenListStructured(List<Integer> numbers) {
+		
+		for(Integer num : numbers ) {
+			if(num%2==0)
+				System.out.println(num);
+		}
+	}
+
+}

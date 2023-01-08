@@ -1,0 +1,5 @@
+1671925452896	Copy compilation unit
+1671925603272	Extract local variable 'isEvenPredicate'
+1671925640349	Extract local variable 'squareMapper'
+1671925687330	Extract local variable 'printAction'
+1671926689463	Infer generic type arguments

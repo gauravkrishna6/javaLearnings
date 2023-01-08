@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package functional.programming.with.java;
+
+import java.util.List;
+
+/**
+ * @author gkrishna
+ *
+ */
+public class FP01Functional {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		List<Integer> listofNumbers = List.of(1, 2, 3, 45, 7, 12, 6, 23);
+		List<String> listOfSubjects = List.of("Spring", "Spring boot", "api","microservices", "aws", "pcf", "docker", "kubernets");
+		printListFunctional(listofNumbers);
+	}
+
+	private static void print(int n) {
+		System.out.println(n);
+	}
+
+	private static void printListFunctional(List<Integer> numbers) {
+
+		numbers.stream()
+			.forEach(FP01Functional::print);
+		
+		
+		numbers.stream()
+			.forEach(System.out::println);
+
+		numbers.stream()
+			.forEach(n -> System.out.println(n));
+	}
+
+}

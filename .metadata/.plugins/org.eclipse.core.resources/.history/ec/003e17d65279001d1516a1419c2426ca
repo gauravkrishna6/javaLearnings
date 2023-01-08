@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package functional.programming.with.java;
+
+import java.util.List;
+
+/**
+ * @author gkrishna
+ *
+ */
+public class FP01Functional {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		printListFunctional(List.of(1,2,3,45));
+	}
+
+	private static void printListFunctional(List<Integer> numbers) {
+
+		numbers.stream().forEach(System.out.println(""));
+	}
+
+}

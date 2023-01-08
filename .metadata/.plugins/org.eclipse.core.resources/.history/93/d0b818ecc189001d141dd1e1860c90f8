@@ -1,0 +1,64 @@
+package chapter.one;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+public class Inventory {
+
+	private List<Guitar> guitars;
+	
+	
+
+	public Inventory() {
+		
+		guitars = new ArrayList<>();
+	}
+
+	public Optional<Guitar> getGuitar(String serialNumber) {
+		
+	return 	guitars.stream()
+			.filter(guitar -> guitar.getSerialNumber().equals(serialNumber))
+			.findFirst();
+		
+	}
+
+	public void addGuitar(String serialNumber, double price, Builder builder,
+			String model, Type type, Wood backWood, Wood topWood) {
+		
+		Guitar guitar =  new Guitar(serialNumber, price, builder, model, type, backWood, topWood);
+		
+		guitars.add(guitar);
+	}
+	
+	public List<Guitars> search(Guitar searchGuitar) {
+		
+		Builder builder = searchGuitar.getBuilder();
+		String model = searchGuitar.getModel();
+		Type type = searchGuitar.getType();
+		Wood backWood = searchGuitar.getBackWood();
+		Wood topWood = searchGuitar.getTopWood();
+		
+		for(Guitar guitar : guitars) {
+			if(!builder.equals(guitar.getBuilder())) {
+				continue;
+			}
+			if(model != null && !model.isEmpty()
+					&& !model.equalsIgnoreCase(guitar.getModel())) {
+				continue;
+			}
+			if(type.equals(guitar.getType())) {
+				continue;
+			}
+			if(backWood.equals(guitar.getBackWood())) {
+				continue;
+			}
+			if(topWood.equals(guitar.getTopWood())) {
+				continue;
+			}
+			return guitar;
+		}
+		return null;
+	}
+
+}

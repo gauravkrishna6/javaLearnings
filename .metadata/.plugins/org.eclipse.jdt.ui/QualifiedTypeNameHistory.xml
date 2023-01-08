@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.OutOfMemoryError"/>
+    <fullyQualifiedTypeName name="java.util.function.BinaryOperator"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.function.UnaryOperator"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.function.BiPredicate"/>
+    <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
+    <fullyQualifiedTypeName name="java.util.function.BiConsumer"/>
+    <fullyQualifiedTypeName name="java.util.function.IntBinaryOperator"/>
+    <fullyQualifiedTypeName name="java.util.function.IntConsumer"/>
+    <fullyQualifiedTypeName name="java.util.function.IntFunction"/>
+    <fullyQualifiedTypeName name="java.util.function.IntPredicate"/>
+    <fullyQualifiedTypeName name="java.util.function.IntSupplier"/>
+    <fullyQualifiedTypeName name="java.util.function.IntToLongFunction"/>
+    <fullyQualifiedTypeName name="java.util.function.IntToDoubleFunction"/>
+    <fullyQualifiedTypeName name="java.util.function.IntUnaryOperator"/>
+    <fullyQualifiedTypeName name="functional.programming.with.java.FP03BehaviorParameterization"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.function.Supplier"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="functional.programming.with.java.Course"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="chapter.one.Guitar"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="chapter.one.Builder"/>
+    <fullyQualifiedTypeName name="chapter.one.Type"/>
+    <fullyQualifiedTypeName name="chapter.one.Wood"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="chapter.one.Inventory"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="chapter.one.GuitarSpec"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package functional.programming.with.java;
+
+import java.util.List;
+import java.util.function.Predicate;
+
+/**
+ * @author gkrishna
+ *
+ */
+public class FP03BehaviorParameterization {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		List<Integer> numbers = List.of(1, 2, 3, 4, 5 , 6, 7);
+		
+
+}

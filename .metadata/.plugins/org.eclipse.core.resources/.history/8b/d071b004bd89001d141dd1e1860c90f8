@@ -1,0 +1,69 @@
+package chapter.one;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+public class Inventory {
+
+	private List<Guitar> guitars;
+	
+	
+
+	public Inventory() {
+		
+		guitars = new ArrayList<>();
+	}
+
+	public Optional<Guitar> getGuitar(String serialNumber) {
+		
+	return 	guitars.stream()
+			.filter(guitar -> guitar.getSerialNumber().equals(serialNumber))
+			.findFirst();
+		
+	}
+
+	public void addGuitar(String serialNumber, double price, String builder,
+			String model, String type, String backWood, String topWood) {
+		
+		Guitar guitar =  new Guitar(serialNumber, price, builder, model, type, backWood, topWood);
+		
+		guitars.add(guitar);
+	}
+	
+	public Guitar search(Guitar searchGuitar) {
+		
+		String builder = searchGuitar.getBuilder();
+		String model = searchGuitar.getModel();
+		String type = searchGuitar.getType();
+		String backWood = searchGuitar.getBackWood();
+		String topWood = searchGuitar.getTopWood();
+		
+		for(Guitar guitar : guitars) {
+			
+			
+			if(builder != null && !builder.isEmpty()
+					&& !builder.equals(guitar.getBuilder())) {
+				continue;
+			}
+			if(model != null && !model.isEmpty()
+					&& !model.equals(guitar.getModel())) {
+				continue;
+			}
+			if(builder != null && !builder.isEmpty()
+					&& !builder.equals(guitar.getBuilder())) {
+				continue;
+			}
+			if(builder != null && !builder.isEmpty()
+					&& !builder.equals(guitar.getBuilder())) {
+				continue;
+			}
+			if(builder != null && !builder.isEmpty()
+					&& !builder.equals(guitar.getBuilder())) {
+				continue;
+			}
+		}
+		return null;
+	}
+
+}

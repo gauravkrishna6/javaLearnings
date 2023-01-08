@@ -1,0 +1,10 @@
+1672019567554	Extract local variable 'sumAccumulator'
+1672020231535	Copy compilation unit
+1672020258632	Rename type 'FP03F'
+1672020509143	Extract local variable 'evenPredicate'
+1672020540547	Extract local variable 'oddPredicate'
+1672042301297	Delete element
+1672093537385	Extract method 'filterAndPrint'
+1672121300315	Copy compilation unit
+1672131280331	Copy compilation unit
+1672188384270	Extract local variable 'scoreGreaterThan95Predicate'

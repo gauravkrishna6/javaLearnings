@@ -1,0 +1,19 @@
+package chapter.one;
+
+public enum Builder {
+
+	FENDER ("Fender"),
+	MARTIN,
+	COLLINS,
+	GIBSON,
+	OLSON,
+	PRS,
+	RYAN,
+	ANY;
+	
+	private final String value ;
+
+	Builder(String value) {
+		this.value = value;
+	}
+}

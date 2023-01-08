@@ -1,0 +1,33 @@
+package chapter.one;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Inventory {
+
+	private List<Guitar> guitars;
+	
+	
+
+	public Inventory() {
+		
+		guitars = new ArrayList<>();
+	}
+
+	public List<Guitar> getGuitars() {
+		return guitars;
+	}
+
+	public void addGuitar(String serialNumber, double price, String builder,
+			String model, String type, String backWood, String topWood) {
+		
+		Guitar guitar =  new Guitar(serialNumber, price, builder, model, type, backWood, topWood);
+		
+		this.guitars.add(guitar);
+	}
+	
+	public Guitar search(Guitar searchGuitar) {
+		return null;
+	}
+
+}

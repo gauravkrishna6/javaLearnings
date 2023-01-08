@@ -1,0 +1,10 @@
+package chapter.one;
+
+public enum Type {
+	ACCOUSTIC ("Accoustic"),
+	ELECTRIC ("Electric");
+	
+	private String value ;
+	
+
+}

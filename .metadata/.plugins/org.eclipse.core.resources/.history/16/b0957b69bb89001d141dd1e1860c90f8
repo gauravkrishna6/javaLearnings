@@ -1,0 +1,36 @@
+package chapter.one;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Inventory {
+
+	private List<Guitar> guitars;
+	
+	
+
+	public Inventory() {
+		
+		guitars = new ArrayList<>();
+	}
+
+	public Guitar getGuitar(String serialNumber) {
+		
+	return 	guitars.stream().filter(guitar -> guitar.getSerialNumber().equals(serialNumber))
+			.findFirst().get();
+		
+	}
+
+	public void addGuitar(String serialNumber, double price, String builder,
+			String model, String type, String backWood, String topWood) {
+		
+		Guitar guitar =  new Guitar(serialNumber, price, builder, model, type, backWood, topWood);
+		
+		guitars.add(guitar);
+	}
+	
+	public Guitar search(Guitar searchGuitar) {
+		return null;
+	}
+
+}

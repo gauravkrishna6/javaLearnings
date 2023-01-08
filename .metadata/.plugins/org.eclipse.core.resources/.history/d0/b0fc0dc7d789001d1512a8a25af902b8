@@ -1,0 +1,79 @@
+package chapter.one;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+public class Inventory {
+
+	private List<Guitar> guitars;
+	
+	
+
+	public Inventory() {
+		
+		guitars = new ArrayList<>();
+	}
+
+	public Optional<Guitar> getGuitar(String serialNumber) {
+		
+	return 	guitars.stream()
+			.filter(guitar -> guitar.getSerialNumber().equals(serialNumber))
+			.findFirst();
+		
+	}
+
+	public void addGuitar(String serialNumber, double price, GuitarSpec specs) {
+		
+		Guitar guitar =  new Guitar(serialNumber, price, specs);
+		
+		guitars.add(guitar);
+	}
+	
+	public List<Guitar> search(GuitarSpec spec) {
+		
+		List<Guitar> matchedGuitars = new LinkedList<>();
+		
+//		Builder builder = spec.getBuilder();
+//		String model = spec.getModel();
+//		Type type = spec.getType();
+//		Wood backWood = spec.getBackWood();
+//		Wood topWood = spec.getTopWood();
+		
+		
+		guitars.stream()
+			.filter(guitar -> guitar.equals(spec))
+			.collect(Collectors.toList());
+		
+		for(Guitar guitar : guitars) {
+			
+			if(guitar.getSpecs().equals(spec))
+			
+			
+//			GuitarSpec guitarSpec = guitar.getSpecs();
+			
+			
+//			if(!builder.equals(guitarSpec.getBuilder())) {
+//				continue;
+//			}
+//			if(model != null && !model.isEmpty()
+//					&& !model.equalsIgnoreCase(guitarSpec.getModel())) {
+//				continue;
+//			}
+//			if(type.equals(guitarSpec.getType())) {
+//				continue;
+//			}
+//			if(backWood.equals(guitarSpec.getBackWood())) {
+//				continue;
+//			}
+//			if(topWood.equals(guitarSpec.getTopWood())) {
+//				continue;
+//			}
+			matchedGuitars.add(guitar);
+		}
+		return matchedGuitars;
+	}
+
+}

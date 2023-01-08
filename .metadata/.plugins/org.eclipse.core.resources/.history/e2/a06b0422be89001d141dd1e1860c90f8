@@ -1,0 +1,19 @@
+package chapter.one;
+
+public enum Builder {
+
+	FENDER ("Fender"),
+	MARTIN,
+	COLLINS,
+	GIBSON,
+	OLSON,
+	PRS,
+	RYAN,
+	ANY;
+	
+	private final int value ;
+
+	Builder(String string) {
+		// TODO Auto-generated constructor stub
+	}
+}

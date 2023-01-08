@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package functional.programming.with.java;
+
+import java.util.List;
+
+/**
+ * @author gkrishna
+ *
+ */
+public class FP02Functional {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		List<Integer> listofNumbers = List.of(1, 2, 3, 45, 7, 12, 6, 23);
+		List<String> listOfSubjects = List.of("Spring", "Spring boot", "api","microservices", "aws", "pcf", "docker", "kubernets");
+		
+
+		printSumOfList(listofNumbers);
+	}
+
+	private static void printSumOfList(List<Integer> listofNumbers) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+	
+
+}

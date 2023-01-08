@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package functional.programming.with.java;
+
+/**
+ * @author gkrishna
+ *
+ */
+public class FP01Structured {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

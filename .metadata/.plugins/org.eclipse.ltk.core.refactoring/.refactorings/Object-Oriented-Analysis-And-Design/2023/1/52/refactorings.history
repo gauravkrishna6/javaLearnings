@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Builder.java&apos; to &apos;chapter.one.Builder.java&apos;&#x0A;- Original project: &apos;Object-Oriented-Analysis-And-Design&apos;&#x0A;- Destination element: &apos;chapter.one.Builder.java&apos;&#x0A;- Original element: &apos;chapter.one.Builder.java&apos;" description="Copy compilation unit" destination="/src&lt;chapter.one{Builder.java" element1="/src&lt;chapter.one{Builder.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1672569051063" units="1" version="1.0"/>
+</session>

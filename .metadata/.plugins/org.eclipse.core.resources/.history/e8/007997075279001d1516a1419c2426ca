@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package functional.programming.with.java;
+
+import java.util.List;
+
+/**
+ * @author gkrishna
+ *
+ */
+public class FP01Structured {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		printListStructured(List.of(1,2,3,45));
+	}
+
+	private static void printListStructured(List<Integer> of) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

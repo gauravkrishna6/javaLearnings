@@ -1,0 +1,28 @@
+package functional.programming.with.java;
+
+import java.util.LinkedList;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LinkedList<String> llNames = new LinkedList<>();
+		
+		llNames.add("Gaurav");
+		llNames.add("Rahul");
+		llNames.add("pawan");
+		llNames.add("John");
+		
+		
+		
+		ArrayList<String> llNames = new LinkedList<>();
+		
+		llNames.add("Gaurav");
+		llNames.add("Rahul");
+		llNames.add("pawan");
+		llNames.add("John");
+
+	}
+
+}

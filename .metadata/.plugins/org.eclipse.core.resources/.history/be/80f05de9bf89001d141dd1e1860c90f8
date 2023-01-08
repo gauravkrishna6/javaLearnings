@@ -1,0 +1,24 @@
+package chapter.one;
+
+public enum Wood {
+
+	FENDER("Fender"),
+	MARTIN("Martin"),
+	COLLINS("Collins"),
+	GIBSON("Gibson"),
+	OLSON("Olson"),
+	PRS("Prs"),
+	RYAN("Ryan"),
+	ANY("Any");
+	
+	private final String value ;
+
+	Wood(String value) {
+		this.value = value;
+	}
+
+	public String getValue() {
+		return value;
+	}
+	
+}
