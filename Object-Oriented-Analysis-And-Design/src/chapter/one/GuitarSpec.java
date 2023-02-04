@@ -10,16 +10,18 @@ public class GuitarSpec{
 	private Type type;
 	private Wood backWood;
 	private Wood topWood;
+	private int numString;
 	
 	
 	
-	public GuitarSpec(Builder builder, String model, Type type, Wood backWood, Wood topWood) {
+	public GuitarSpec(Builder builder, String model, Type type, Wood backWood, Wood topWood, int numString) {
 		
 		this.builder = builder;
 		this.model = model;
 		this.type = type;
 		this.backWood = backWood;
 		this.topWood = topWood;
+		this.numString = numString;
 	}
 	
 	
@@ -53,11 +55,17 @@ public class GuitarSpec{
 	public void setTopWood(Wood topWood) {
 		this.topWood = topWood;
 	}
+	public int getNumString() {
+		return numString;
+	}
+	public void setNumString(int numString) {
+		this.numString = numString;
+	}
 
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(backWood, builder, model, topWood, type);
+		return Objects.hash(backWood, builder, model, topWood, type, numString);
 	}
 
 	@Override
@@ -69,8 +77,12 @@ public class GuitarSpec{
 		if (getClass() != obj.getClass())
 			return false;
 		GuitarSpec other = (GuitarSpec) obj;
-		return backWood == other.backWood && builder == other.builder && Objects.equals(model, other.model)
-				&& topWood == other.topWood && type == other.type;
+		return backWood == other.backWood 
+				&& builder == other.builder 
+				&& Objects.equals(model, other.model)
+				&& topWood == other.topWood 
+				&& type == other.type
+				&& numString == other.numString;
 	}
 	
 
