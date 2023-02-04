@@ -1,7 +1,10 @@
 package functional.programming.with.java;
 
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 
 class Course implements Comparable<Course> {
@@ -52,7 +55,7 @@ class Course implements Comparable<Course> {
 
 	@Override
 	public String toString() {
-		return "Course[ name=" + name + "::reviewScore=" + reviewScore + "::noOfStudents=" + noOfStudents + " ]";
+		return "Course[ " + name + "::" + reviewScore + "::" + noOfStudents + "]";
 	}
 
 	@Override
@@ -72,6 +75,10 @@ public class FP04CustomClass {
 				new Course("FullStack", "FullStack", 91, 14000), new Course("AWS", "Cloud", 92, 21000),
 				new Course("Azure", "Cloud", 99, 21000), new Course("Docker", "Cloud", 92, 20000),
 				new Course("Kubernetes", "cloud", 91, 20000));
+		
+		Map<Integer, Integer> mp = new HashMap<>();
+		mp.put(null, 4);
+		mp.put(null, 5);
 
 //		allMatch, NoneMatch , NoneMatch
 
@@ -88,13 +95,14 @@ public class FP04CustomClass {
 //		System.out.println(
 //				courses.stream().allMatch(course -> course.getReviewScore() > 90));
 
-		courses.stream().sorted().forEach(System.out::println);
-		Comparator<Course> comp = (c1, c2) -> c1.getNoOfStudents() - c2.getNoOfStudents();
-		Comparator<Course> comp1 = Comparator.comparing(Course::getNoOfStudents);
+//		courses.stream().sorted().forEach(System.out::println);
+//		Comparator<Course> comp = (c1, c2) -> c1.getNoOfStudents() - c2.getNoOfStudents();
+//		Comparator<Course> comp1 = Comparator.comparing(Course::getNoOfStudents);
+		Comparator<Course> comp2 = Comparator.comparing(Course::getNoOfStudents);
 		
-		Course c  = null;
-		c.getCategory();
+		Collections.sort(courses, comp2);
 		
+		courses.stream().forEach(System.out::println);
 		
 
 	}
